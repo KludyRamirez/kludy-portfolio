@@ -38,7 +38,7 @@ export default function Hero() {
     <div className="w-[100%] h-screen">
       <div className="w-[100%] flex flex-col bg-herobg pb-[70px]">
         <div className="fixed px-[97px] h-[180px] flex items-center justify-between w-[100%] z-20">
-          <span className="font-[700] text-[38px] text-[#FFBF00]">Kludu.</span>
+          <span className="font-[700] text-[38px] text-[#FBEC5D]">Kludu.</span>
           <div
             onClick={toggleMenuButton}
             className="cursor-pointer mt-[18px] flex flex-col items-end w-[100px] h-[40px] gap-4"

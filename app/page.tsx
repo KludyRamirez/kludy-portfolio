@@ -72,7 +72,7 @@ export default function Home() {
               ></div>
               <div
                 ref={sectionRefs[section.id]}
-                className="w-[100%]"
+                className="w-[100%] z-70"
                 id={`referenceDiv${section.id}`}
               >
                 <Component />
