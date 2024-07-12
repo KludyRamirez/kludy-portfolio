@@ -30,7 +30,7 @@ export default function Home() {
 
   const handleClick = (section: keyof typeof sectionRefs) => {
     if (sectionRefs[section].current) {
-      sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+      sectionRefs[section].current!.scrollIntoView({ behavior: "smooth" });
     }
   };
 
