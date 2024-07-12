@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Headings() {
   return (
-    <div className="flex flex-col w-[100%] h-screen px-[210px] gap-8 relative z-50">
+    <div className="flex flex-col w-[100%] h-screen px-[210px] gap-8 relative">
       <div className="w-[100%] flex items-center mt-[220px]">
         <div className="flex flex-col w-[44%] gap-2">
           <span className="text-[64px] text-[#0047AB] font-[800]">

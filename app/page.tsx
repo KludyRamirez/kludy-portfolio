@@ -37,8 +37,8 @@ export default function Home() {
   return (
     <main className="min-w-screen min-h-screen bg-[#f9f9f9]">
       <div className="flex flex-col items-center justify-start w-[100%] h-[100%] relative">
-        <div className="absolute top-[400px] right-[120px]">
-          <div className="flex flex-col fixed gap-8">
+        <div className="absolute top-[400px] right-[120px] z-80">
+          <div className="flex flex-col fixed gap-8 ">
             {sections.map((section, index) => {
               const isIntersecting = intersectionStates[section.id];
               return (
