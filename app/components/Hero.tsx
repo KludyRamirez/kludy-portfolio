@@ -10,7 +10,7 @@ import {
   BsInstagram,
 } from "react-icons/bs";
 import Link from "next/link";
-import klogo from "../assets/images/klogo.png";
+import kblue from "../assets/images/kblue.png";
 
 export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +40,9 @@ export default function Hero() {
       <div className="w-[100%] h-[fit-content] flex flex-col sm:bg-herobgsm md:bg-herobgsm lg:bg-herobg pb-[90px]">
         <div className="lg:fixed sm:px-[20px] md:px-[40px] lg:px-[97px] sm:pt-4 lg:h-[180px] flex items-center justify-between w-[100%] z-20">
           <Image
-            src={klogo}
+            src={kblue}
             alt=""
-            className="w-[80px] h-[80px] rounded-[50%]"
+            className="sm:w-[52px] sm:h-[50px] lg:w-[80px] lg:h-[80px] sm:rounded-[2px] lg:rounded-[50%] transition transform hover:rotate-180 duration-500 ease-in-out"
           />
           <div
             onClick={toggleMenuButton}
