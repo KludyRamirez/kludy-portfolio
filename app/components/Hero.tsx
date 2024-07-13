@@ -10,6 +10,7 @@ import {
   BsInstagram,
 } from "react-icons/bs";
 import Link from "next/link";
+import klogo from "../assets/images/klogo.png";
 
 export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,21 +36,25 @@ export default function Hero() {
   };
 
   return (
-    <div className="w-[100%] h-screen">
-      <div className="w-[100%] flex flex-col bg-herobg pb-[70px]">
-        <div className="fixed px-[97px] h-[180px] flex items-center justify-between w-[100%] z-20">
-          <span className="font-[700] text-[38px] text-[#FBEC5D]">Kludu.</span>
+    <div className="w-[100%] sm:h-[100%] lg:h-screen">
+      <div className="w-[100%] h-[fit-content] flex flex-col sm:bg-herobgsm md:bg-herobgsm lg:bg-herobg pb-[90px]">
+        <div className="lg:fixed sm:px-[20px] md:px-[40px] lg:px-[97px] sm:pt-4 lg:h-[180px] flex items-center justify-between w-[100%] z-20">
+          <Image
+            src={klogo}
+            alt=""
+            className="w-[80px] h-[80px] rounded-[50%]"
+          />
           <div
             onClick={toggleMenuButton}
             className="cursor-pointer mt-[18px] flex flex-col items-end w-[100px] h-[40px] gap-4"
           >
-            <div className="w-[45px] h-[2px] bg-[#4831d4]"></div>
-            <div className="w-[33px] h-[2px] bg-[#4831d4]"></div>
+            <div className="w-[45px] h-[2px] sm:bg-[#FBEC5D] bg-[#0047AB]"></div>
+            <div className="w-[33px] h-[2px] sm:bg-[#FBEC5D] bg-[#0047AB]"></div>
           </div>
           {isMenuOpen ? (
             <div
               ref={menuRef}
-              className="absolute fixed top-[30px] right-[60px] w-[420px] h-[550px] bg-[white] z-70 pt-8 pb-8 pr-8 pl-12 shadow-sm"
+              className="absolute fixed sm:top-0 sm:right-0 sm:w-screen sm:h-screen top-[30px] right-[60px] w-[420px] h-[550px] bg-[white] z-70 pt-8 pb-8 pr-8 pl-12 shadow-sm"
             >
               <div className="flex flex-col items-start justify-start w-[100%] h-[100%] tracking-normal gap-4">
                 <div className="flex w-[100%] justify-end items-center">
@@ -86,15 +91,8 @@ export default function Hero() {
                       <BsArrowUpRight className="text-[24px] text-[#0047AB]" />
                     </div>
                   </a>
-                  <a className="underline-none" href="" target="_blank">
-                    <div className="w-[100%] flex justify-start items-center gap-4 mt-4">
-                      <span className="text-[24px] text-[400] text-[#0047AB]">
-                        More content soon!
-                      </span>
-                    </div>
-                  </a>
                 </div>
-                <div className="w-[100%] flex justify-between items-end pt-[180px]">
+                <div className="w-[100%] flex justify-between items-end pt-[240px]">
                   <div className="flex justify-start items-center gap-8">
                     <a
                       className="underline-none"
@@ -124,16 +122,20 @@ export default function Hero() {
                       </div>
                     </a>
                   </div>
-                  <span className="text-[24px] text-[#0047AB] pr-4">Jesus</span>
+                  <div className="bg-[#0047AB] rounded-[4px] mr-4 ">
+                    <span className="text-[24px] text-[white] p-4 font-[700]">
+                      Jesus
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           ) : null}
         </div>
 
-        <div className="mt-[240px] h-[370px] px-[210px] flex justify-between items-center">
-          <div className="flex flex-col w-[620px] h-[100%] gap-8 relative">
-            <span className="text-[#FBEC5D] text-[68px] font-[800] leading-[80px] mt-[10px]">
+        <div className="sm:mt-[100px] md:mt-[100px] lg:mt-[240px] h-[370px] sm:h-[100%] sm:px-[20px] md:px-[20px] lg:px-[210px] flex justify-between items-center flex-wrap sm:gap-12">
+          <div className="flex flex-col w-[620px] h-[100%] gap-8 lg:relative flex-wrap">
+            <span className="text-[#FBEC5D] sm:text-[48px] md:text-[48px] lg:text-[72px] font-[800] sm:leading-normal md:leading-normal lg:leading-[80px] sm:mt-[0px] md:mt-[0px] lg:mt-[10px]">
               Full Stack Developer.
             </span>
             <span className="text-[white] text-[20px] font-[400] leading-loose mt-[-10px] tracking-normal">
@@ -157,13 +159,16 @@ export default function Hero() {
               ></path>
             </svg>
           </div>
-          <div className="flex flex-col w-[548px] h-[100%] relative">
-            <Image
-              src={hero}
-              alt=""
-              className="absolute top-[-80px] left-0 w-[300px] h[300px] z-10 shadow-sm"
-            />
-            <div className="mt-[-26px] border-[1px] border-white w-[380px] h-[420px] relative">
+          <div className="flex flex-col w-[548px] h-[100%] lg:relative sm:items-center">
+            <div className="z-10 lg:absolute top-[-80px] left-0 sm:w-[200px] sm:h-[200px] lg:w-[300px] shadow-sm overflow:hidden sm:border-[1px] sm:p-2">
+              <Image
+                src={hero}
+                alt=""
+                className="w-[100%] sm:h-[100%] sm:object-cover"
+              />
+            </div>
+
+            <div className="mt-[-26px] border-[1px] border-white w-[380px] h-[420px] lg:relative sm:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="380"
@@ -172,7 +177,7 @@ export default function Hero() {
                 data-shape="true"
                 aria-hidden="true"
                 id="cs-pattern-right"
-                className="absolute top-[60px] left-[80px]"
+                className="lg:absolute top-[60px] left-[80px]"
               >
                 <path
                   fill="#4831d4"
@@ -215,7 +220,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex justify-start itens-center gap-12 w-[100%] px-[210px]">
+        <div className="sm:pt-14 flex justify-start itens-center gap-12 w-[100%] sm:px-[20px] md:px-[20px] lg:px-[210px] flex-wrap">
           <div className="w-[300px] text-[17px] text-[#FBEC5D] font-[400] tracking-normal">
             Proficient in enhancing interfaces with design systems and UI
             engineering.

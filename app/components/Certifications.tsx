@@ -19,7 +19,7 @@ import Image from "next/image";
 export default function Certifications() {
   return (
     <div className="flex flex-col justify-start items-start w-[100%] min-h-screen bg-[#f5f4fc]">
-      <div className="w-[100%] mt-[166px] px-[200px] pt-[50px] pb-[200px]">
+      <div className="w-[100%] sm:mt-[40px] lg:mt-[166px] sm:px-[20px] lg:px-[200px] pt-[50px] mb-[100px]">
         <div className="flex flex-col items-center gap-4 w-[100%]">
           <div className="w-[100%] flex justify-center items-center">
             <span className="text-[32px] text-[#0047AB] font-[800]">
@@ -30,7 +30,7 @@ export default function Certifications() {
             Certifications I gathered from past years.
           </span>
 
-          <div className="mt-12 flex-wrap w-[100%] flex justify-start items-start gap-4 px-[164px]">
+          <div className="mt-12 flex-wrap w-[100%] flex justify-start items-start gap-4 sm:px-[20px] lg:px-[164px]">
             <div className="cursor-pointer flex flex-col w-[365px] h-[300px] bg-[#F9F8FD] rounded-[4px] shadow-bottomShadow hover:transform hover:translate-y-[-3px] hover:shadow-bottomRightShadow">
               <div className="flex justify-center items-center w-[100%] h-[174px]">
                 <Image src={microsoft} alt="" className="w-[300px]" />

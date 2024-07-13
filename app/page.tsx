@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center justify-start w-[100%] h-[100%] relative">
-        <div className="absolute top-[400px] right-[120px] z-80">
+        <div className="absolute top-[400px] right-[120px] z-80 sm:hidden md:hidden lg:block">
           <div className="flex flex-col fixed gap-8 ">
             {sections.map((section, index) => {
               const isIntersecting = intersectionStates[section.id];

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Headings() {
   return (
-    <div className="flex flex-col w-[100%] h-screen px-[210px] gap-8 z-60">
-      <div className="w-[100%] flex items-center mt-[220px]">
-        <div className="flex flex-col w-[44%] gap-2">
+    <div className="flex flex-col w-[100%] sm:h-[100%] lg:h-screen sm:px-[20px] lg:px-[210px] sm:gap-8 lg:gap-16  z-60">
+      <div className="w-[100%] flex items-center sm:mt-[80px] lg:mt-[220px] flex-wrap">
+        <div className="flex flex-col lg:w-[44%] sm:w-[100%] gap-2 sm:flex-wrap">
           <span className="text-[64px] text-[#0047AB] font-[800]">
             Built Diff
           </span>
@@ -16,7 +16,7 @@ export default function Headings() {
             positive and proactive attitude.
           </span>
         </div>
-        <div className="flex flex-col items-center w-[56%] gap-2">
+        <div className="flex flex-col items-center lg:w-[56%] sm:w-[100%] gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="360"
@@ -40,8 +40,8 @@ export default function Headings() {
           </svg>
         </div>
       </div>
-      <div className="w-[100%] flex items-center">
-        <div className="flex flex-col items-center w-[56%] gap-2">
+      <div className="w-[100%] flex items-center flex-wrap-reverse sm:mb-[100px]">
+        <div className="flex flex-col items-center lg:w-[56%] sm:w-[100%] gap-2 flex-wrap">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="230"
@@ -61,7 +61,7 @@ export default function Headings() {
             ></path>
           </svg>
         </div>
-        <div className="flex flex-col w-[44%] gap-2">
+        <div className="flex flex-col lg:w-[44%] sm:w-[100%] sm:flex-wrap">
           <span className="text-[64px] text-[#0047AB] font-[800]">
             Engineered
           </span>

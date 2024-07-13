@@ -11,11 +11,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-center w-[100%] h-screen bg-[#191970]">
-      <div className="w-[100%] h-[624px] px-[220px] pt-[120px] pb-[100px]">
+    <div className="flex flex-col sm:justify-start lg:justify-center w-[100%] h-screen bg-[#191970]">
+      <div className="w-[100%] sm:px-[40px] lg:px-[220px] sm:pt-[100px] lg:pt-[40px]">
         <div className="flex flex-col w-[100%] h-[100%]">
-          <div className="w-[100%] flex justify-start items-start gap-16 border-b-[1px] border-[#f9f9f9] pb-[160px]">
-            <div className="flex flex-col justify-start gap-8 w-[35%] text-[white] font-[400] tracking-normal">
+          <div className="w-[100%] flex justify-start items-start gap-16 border-b-[1px] border-[#f9f9f9] sm:pb-[40px] lg:pb-[120px] sm:flex-wrap">
+            <div className="flex flex-col justify-start gap-8 sm:w-[100%] lg:w-[35%] text-[white] font-[400] tracking-normal">
               <div className="flex justify-start items-center gap-4 tracking-[0.3em] text-[20px]">
                 <span>Connect with me</span>
                 <BsArrowUpRightSquare className="text-[24px]" />
@@ -42,7 +42,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex flex-col justify-start gap-8 w-[35%] text-[white] font-[400] tracking-normal">
-              <div className="text-[20px] text-[#191970] flex items-center justify-start gap-4 cursor-pointer">
+              <div className="sm:hidden text-[20px] text-[#191970] flex items-center justify-start gap-4 cursor-pointer">
                 <span className="hover:underline">My summary</span>
                 <BsLinkedin className="text-[24px]" />
               </div>
@@ -76,7 +76,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex flex-col justify-start gap-8 w-[35%] text-[white] font-[400] tracking-normal">
-              <div className="text-[20px] text-[#191970] flex items-center justify-start gap-4 cursor-pointer">
+              <div className="sm:hidden text-[20px] text-[#191970] flex items-center justify-start gap-4 cursor-pointer">
                 <span className="hover:underline">My summary</span>
                 <BsLinkedin className="text-[24px]" />
               </div>
@@ -93,7 +93,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-[100%] flex justify-between items-center pt-[128px]">
+        <div className="w-[100%] flex justify-between items-center">
           <div className="flex justify-start items-center gap-4">
             <FaRegCopyright className="text-[24px] text-white" />
             <span className="text-[20px] text-white tracking-normal">
