@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
+import Head from "next/head";
 import Certifications from "./components/Certifications";
 import Filled from "./components/Filled";
 import Footer from "./components/Footer";
@@ -36,6 +37,9 @@ export default function Home() {
 
   return (
     <main className="min-w-screen min-h-screen bg-[#f9f9f9]">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col items-center justify-start w-[100%] h-[100%] relative">
         <div className="absolute top-[400px] right-[120px] z-80">
           <div className="flex flex-col fixed gap-8 ">
