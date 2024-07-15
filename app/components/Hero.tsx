@@ -5,6 +5,8 @@ import React, { useState, useEffect, useRef } from "react";
 import hero from "../assets/images/hero.jpg";
 import {
   BsArrowUpRight,
+  BsEnvelope,
+  BsEnvelopeOpen,
   BsFacebook,
   BsGithub,
   BsInstagram,
@@ -88,11 +90,11 @@ export default function Hero() {
                       <span className="text-[24px] text-[400] text-[#0047AB]">
                         My Email
                       </span>
-                      <BsArrowUpRight className="text-[24px] text-[#0047AB]" />
+                      <BsEnvelopeOpen className="text-[24px] text-[#0047AB]" />
                     </div>
                   </a>
                 </div>
-                <div className="w-[100%] flex justify-between items-end pt-[240px]">
+                <div className="w-[100%] flex justify-between items-end pt-[280px]">
                   <div className="flex justify-start items-center gap-8">
                     <a
                       className="underline-none"
@@ -100,7 +102,9 @@ export default function Hero() {
                       target="_blank"
                     >
                       <div className="w-[100%] flex justify-strt items-center">
-                        <BsFacebook className="text-[32px] text-[#0047AB]" />
+                        <span className="text-[24px] text-[#0047AB] font-[400]">
+                          FB
+                        </span>
                       </div>
                     </a>
                     <a
@@ -109,7 +113,9 @@ export default function Hero() {
                       target="_blank"
                     >
                       <div className="w-[100%] flex justify-start items-center">
-                        <BsInstagram className="text-[32px] text-[#0047AB]" />
+                        <span className="text-[24px] text-[#0047AB] font-[400]">
+                          IG
+                        </span>
                       </div>
                     </a>
                     <a
@@ -118,14 +124,15 @@ export default function Hero() {
                       target="_blank"
                     >
                       <div className="w-[100%] flex justify-start items-center">
-                        <BsGithub className="text-[32px] text-[#0047AB]" />
+                        <span className="text-[24px] text-[#0047AB] font-[400]">
+                          GH
+                        </span>
                       </div>
                     </a>
                   </div>
-                  <div className="bg-[#0047AB] rounded-[4px] mr-4 ">
-                    <span className="text-[24px] text-[white] p-4 font-[700]">
-                      Jesus
-                    </span>
+
+                  <div className="text-[24px] text-[#0047AB] font-[400] mr-2">
+                    Jesus
                   </div>
                 </div>
               </div>
