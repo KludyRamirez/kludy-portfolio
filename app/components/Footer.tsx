@@ -83,7 +83,7 @@ export default function Footer() {
               <Link
                 className="underline-none"
                 target="_blank"
-                href="/ramirezkludy-cv.pdf"
+                href="/Kludy-Ramirez-CV.pdf"
               >
                 <div className="text-[20px] flex items-center justify-start gap-4 cursor-pointer">
                   <span className="hover:underline">My Resume</span>

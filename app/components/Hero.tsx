@@ -37,12 +37,12 @@ export default function Hero() {
 
   return (
     <div className="w-[100%] sm:h-[100%] lg:h-screen">
-      <div className="w-[100%] h-[fit-content] flex flex-col sm:bg-herobgsm md:bg-herobgsm lg:bg-herobg pb-[90px]">
+      <div className="w-[100%] h-[fit-content] flex flex-col sm:bg-herobgsm md:bg-herobgsm lg:bg-herobg pb-[80px]">
         <div className="lg:fixed sm:px-[20px] md:px-[40px] lg:px-[97px] sm:pt-4 lg:h-[180px] flex items-center justify-between w-[100%] z-20">
           <Image
             src={kblue}
             alt=""
-            className="sm:w-[52px] sm:h-[50px] lg:w-[80px] lg:h-[80px] sm:rounded-[2px] lg:rounded-[50%] transition transform hover:rotate-180 duration-500 ease-in-out"
+            className="sm:w-[52px] sm:h-[50px] lg:w-[70px] lg:h-[70px] sm:rounded-[2px] lg:rounded-[50%] transition transform hover:rotate-180 duration-500 ease-in-out"
           />
           <div
             onClick={toggleMenuButton}
@@ -70,7 +70,7 @@ export default function Hero() {
                   <Link
                     className="underline-none"
                     target="_blank"
-                    href="/ramirezkludy-cv.pdf"
+                    href="/Kludy-Ramirez-CV.pdf"
                   >
                     <div className="w-[100%] flex justify-start items-center gap-4">
                       <span className="text-[24px] text-[400] text-[#0047AB]">
@@ -212,6 +212,40 @@ export default function Hero() {
                 <path
                   fill="none"
                   stroke="#ccf381"
+                  stroke-miterlimit="50"
+                  stroke-width="2"
+                  d="M2.114 541.705v0l-.56 22.258v0l22.258-.561v0l-.56 22.259v0l22.258-.56v0l-.56 22.258v0l22.258-.56v0l-.559 22.26v0l22.26-.56v0"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="670"
+                height="670"
+                viewBox="0 0 935 701"
+                data-shape="true"
+                aria-hidden="true"
+                className="absolute top-[-190px] left-[-160px]"
+              >
+                <path
+                  fill="none"
+                  stroke="#f9f9f9"
+                  stroke-miterlimit="50"
+                  stroke-width="2"
+                  d="M2.114 541.705v0l-.56 22.258v0l22.258-.561v0l-.56 22.259v0l22.258-.56v0l-.56 22.258v0l22.258-.56v0l-.559 22.26v0l22.26-.56v0"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="670"
+                height="670"
+                viewBox="0 0 935 701"
+                data-shape="true"
+                aria-hidden="true"
+                className="absolute top-[-340px] left-[-42px]"
+              >
+                <path
+                  fill="none"
+                  stroke="#f9f9f9"
                   stroke-miterlimit="50"
                   stroke-width="2"
                   d="M2.114 541.705v0l-.56 22.258v0l22.258-.561v0l-.56 22.259v0l22.258-.56v0l-.56 22.258v0l22.258-.56v0l-.559 22.26v0l22.26-.56v0"

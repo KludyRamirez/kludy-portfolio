@@ -41,8 +41,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center justify-start w-[100%] h-[100%] relative">
-        <div className="absolute top-[400px] right-[120px] z-80 sm:hidden md:hidden lg:block">
-          <div className="flex flex-col fixed gap-8 ">
+        <div className="absolute top-[500px] right-[120px] z-80 sm:hidden md:hidden lg:block">
+          <div className="flex flex-col fixed gap-6">
             {sections.map((section, index) => {
               const isIntersecting = intersectionStates[section.id];
               return (
@@ -51,10 +51,10 @@ export default function Home() {
                   onClick={() =>
                     handleClick(section.id as keyof typeof sectionRefs)
                   }
-                  className={`w-[20px] h-[20px] border-[1px] cursor-pointer z-100 ${
+                  className={`w-[16px] h-[16px] border-[4px] cursor-pointer z-100 ${
                     isIntersecting
                       ? "rounded-[2px] border-[red] transform rotate-[45deg]"
-                      : "rounded-[50%] border-[#5D3FD3]"
+                      : "rounded-[50%] border-[#1F51FF]"
                   }`}
                 ></div>
               );
