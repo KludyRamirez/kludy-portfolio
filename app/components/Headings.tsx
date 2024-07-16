@@ -80,7 +80,7 @@ export default function Headings() {
           </Tilt>
         </div>
       </div>
-      <div className="w-[100%] flex items-center flex-wrap">
+      <div className="w-[100%] flex items-center flex-wrap pt-16">
         <div className="flex flex-col lg:w-[44%] sm:w-[100%] gap-2 sm:flex-wrap">
           <span className="text-[64px] text-[#0047AB] font-[800]">
             Built Diff
