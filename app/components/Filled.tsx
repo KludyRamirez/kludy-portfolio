@@ -596,7 +596,7 @@ export default function Filled() {
             </div>
           </Tilt>
           <Tilt>
-            <div className="flex justify-center items-center rounded-[8px] pt-1">
+            <div className="flex justify-center items-center rounded-[8px] mt-1 ml-1">
               <svg
                 viewBox="0 0 24 24"
                 fill="#ffffff"
