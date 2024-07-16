@@ -70,7 +70,7 @@ export default function Headings() {
               </span>
               <div className="flex flex-col gap-1 w-[100%]">
                 <span className="font-[500] text-[14px] text-[#0047AB] tracking-normal">
-                  Jun 2023 - Oct 2023
+                  Mar 2024 - Jul 2024
                 </span>
                 <span className="font-[800] text-[37px] text-[#0047AB]">
                   PLV - <br /> Office of Student Affairs
