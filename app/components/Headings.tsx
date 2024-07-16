@@ -54,7 +54,7 @@ export default function Headings() {
               </span>
               <div className="flex flex-col gap-1 w-[100%]">
                 <span className="font-[500] text-[14px] text-white tracking-normal">
-                  Oct 2023 - November 2023
+                  Oct 2023 - Nov 2023
                 </span>
                 <span className="font-[800] text-[37px] text-white">
                   Asia <br /> Pacific Digital of GrowthOps
